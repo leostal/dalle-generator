@@ -1,8 +1,6 @@
 .textarea {
   font-family: "Baloo 2";
   min-height: 52px;
-  min-width: 40vw;
-  max-width: 60vw;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #f8f8f8;
@@ -12,13 +10,22 @@
   resize: none;
   outline: none;
 
-  &:hover {
-    border: 2px solid pink;
-  }
-
   &:focus {
     border: 2px solid rgb(35, 123, 231);
   }
 
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .textarea {
+    
+  }
 }
 

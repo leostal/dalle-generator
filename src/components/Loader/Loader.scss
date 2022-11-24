@@ -1,0 +1,73 @@
+/*loader1 css begins*/
+.main-wrap {
+  background-color: #2b4661;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrap--white {
+  background-color: #ffffff;
+}
+
+cssLoader17 {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+
+.cssLoader17:before, .cssLoader17:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+
+.cssLoader17:before {
+  animation: before 2s infinite;
+}
+
+.cssLoader17:after {
+  animation: after 2s infinite;
+}
+
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgb(225, 20, 98), -1em 0.5em rgb(111, 202, 220);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgb(225, 20, 98), 0 0.5em rgb(111, 202, 220);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgb(225, 20, 98), 1em 0.5em rgb(111, 202, 220);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgb(225, 20, 98), -1em 0.5em rgb(111, 202, 220);
+  }
+}
+
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgb(238, 114, 255), -0.5em -1em rgb(0, 74, 255);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgb(238, 114, 255), -0.5em 0 rgb(0, 74, 255);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgb(238, 114, 255), -0.5em 1em rgb(0, 74, 255);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgb(238, 114, 255), -0.5em -1em rgb(0, 74, 255);
+  }
+}

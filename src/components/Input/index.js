@@ -2,7 +2,7 @@ import "./TextInput.scss"
 
 const TextInput = (props) => {
     return (
-        <form>
+        <form className="form">
             <textarea className="textarea" {...props}/>
         </form>
     )
