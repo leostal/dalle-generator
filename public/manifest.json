@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DALL-E generator",
+  "name": "leostal's DALL-E Generator",
   "icons": [
     {
       "src": "favicon.ico",
