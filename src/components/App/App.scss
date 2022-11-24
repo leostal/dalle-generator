@@ -15,20 +15,6 @@
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
-@media (max-width: 768px) {
-  .logo-container {
-    min-height: 40vh;
-    max-width: 85%;
-  }
-
-  .App-logo {
-    max-height: 256px;
-  }
-
-  .title {
-    padding: 24px 16px;
-  }
-}
 
 .main {
   background-color: #c7d7fa;
@@ -64,8 +50,37 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: row;
 }
 
 .button-container {
-  padding-left: 24px;
+  padding-left: 16px;
+  padding-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    min-height: 40vh;
+    max-width: 85%;
+  }
+
+  .App-logo {
+    max-height: 256px;
+  }
+
+  .title {
+    padding: 24px 16px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    padding-left: 0px;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: center;
+  }
 }
