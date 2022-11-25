@@ -29,7 +29,8 @@ const App = () => {
             setImageUrl(urlData);
             setLoading(false)
         } catch (e) {
-            setLoading(false)
+            setImageUrl(logo);
+            setLoading(false);
         }
     }
 
