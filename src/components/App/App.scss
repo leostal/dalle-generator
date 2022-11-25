@@ -1,17 +1,17 @@
 .App-logo {
   pointer-events: none;
   height: 512px;
+  border-radius: 16px;
 }
 
 .logo-container {
   display: flex;
-  border-radius: 16px;
-  min-height: 60vh;
-  max-width: 60%;
+  border-radius: 18px;
+  height: 514px;
+  width: 514px;
   border: 2px solid white;
   align-items: center;
   justify-content: center;
-  background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
@@ -29,7 +29,7 @@
 
 .title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 2.5rem;
   margin: 0;
   padding: 48px 16px 32px 16px;
@@ -37,8 +37,8 @@
 
 .description {
   text-align: center;
-  line-height: 24px;
-  font-size: 20px;
+  line-height: 32px;
+  font-size: 28px;
 }
 
 .flex {
@@ -55,13 +55,14 @@
 
 .button-container {
   padding-left: 16px;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 @media (max-width: 768px) {
   .logo-container {
-    min-height: 40vh;
-    max-width: 85%;
+    max-height: 256px;
+    max-width: 256px;
+    border-radius: 16px;
   }
 
   .App-logo {
@@ -69,6 +70,7 @@
   }
 
   .title {
+    font-size: 2.5rem;
     padding: 24px 16px;
   }
 
@@ -77,8 +79,13 @@
     flex-direction: column;
   }
 
+  .description {
+    line-height: 22px;
+    font-size: 20px;
+  }
+
   .button-container {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 16px;
     align-items: center;
     justify-content: center;

@@ -6,7 +6,7 @@
   border: 2px solid #f8f8f8;
   border-radius: 8px;
   background-color: #f8f8f8;
-  font-size: 16px;
+  font-size: 20px;
   resize: none;
   outline: none;
   min-width: 100%;
@@ -21,13 +21,14 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  min-width: 35%;
+  min-width: 30%;
 }
 
 
 @media (max-width: 768px) {
   .textarea {
     min-width: 80vw;
+    min-height: 132px;
   }
 
   .form {
