@@ -1,3 +1,3 @@
-# leostal's DALL-E generator
+DALL-E picture generator
 
 Generate pictures using OpenAI API.
